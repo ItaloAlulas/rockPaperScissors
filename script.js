@@ -12,3 +12,9 @@ function getComputerChoice() {
             return "Scissor";
     }
 }
+
+// User input to choose between the options.
+function getHumanChoice() {
+
+    return prompt('Write your choice (Rock / Paper / Scissor): ');
+}
