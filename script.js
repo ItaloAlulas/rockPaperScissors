@@ -39,12 +39,10 @@ function playRound(computerChoice, humanChoice) {
     humanChoice = getHumanChoice();
 
     // When it's a draw
-    if (humanChoice === 'Rock'    && computerChoice === 'Rock' ||
-        humanChoice === 'Paper'   && computerChoice === 'Paper' ||
-        humanChoice === 'Scissor' && computerChoice === 'Scissor') {
+    if (humanChoice === computerChoice) {
 
         console.log(`
-It's a DRAW!
+It's a DRAW! ${humanChoice} VS ${computerChoice} 
 PC:  ${computerScore}
 YOU: ${humanScore}`);
     }
